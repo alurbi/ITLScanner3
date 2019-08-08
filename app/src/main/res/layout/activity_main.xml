@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnScanear"
+        android:layout_width="276dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/white"
+        android:onClick="btnScanearClick"
+        android:text="Escanear código QR"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAcercaDe"
+        app:layout_constraintEnd_toEndOf="@+id/btnAcercaDe"
+        app:layout_constraintStart_toStartOf="@+id/btnAcercaDe"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        android:text="Acerca de"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalir"
+        app:layout_constraintEnd_toEndOf="@+id/btnSalir"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/btnSalir"
+        app:layout_constraintTop_toBottomOf="@+id/btnScanear" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="304dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="103dp"
+        android:background="@android:color/white"
+        android:text="Salir"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcercaDe" />
+
+    <EditText
+        android:id="@+id/edtxtControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/background_light"
+        android:onClick="btnOkClik"
+        android:text="@android:string/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/edtxtControl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ingrese No. Control"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
